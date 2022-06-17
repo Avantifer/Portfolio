@@ -1,0 +1,28 @@
+<div class="upper-side mx-auto text-center position-relative">
+    <h5>Hola, soy</h5>
+    <h1 >Fernando Ruiz</h1>
+    <h6>Full-Stack Developer</h6>
+    <div class="upper-side--social d-none d-sm-flex flex-column position-absolute justify-content-around">
+        <a href="https://www.linkedin.com/in/fernando-ruiz-rodriguez/" target="_blank">
+            <em class="fa-brands fa-linkedin" role="button"></em>
+        </a>
+        <a href="https://github.com/Avantifer" target="_blank">
+            <em class="fa-brands fa-github" role="button"></em>
+        </a>
+        <div class="upper-side--social--line"></div>
+    </div>
+    <div class="upper-side--scroll-down position-absolute d-none d-sm-block" role="button" (click)="scrollToBottom()">
+        Deslizar hacia abajo
+    </div>
+    <div class="upper-side--buttons py-5">
+        <button mat-button class="border me-3 py-1 px-3" (click)="downloadPdf()">
+            Descargar CV
+        </button>
+        <button mat-button class="py-1 px-3">
+            Charlemos
+        </button>
+    </div>
+    <div class="upper-side--image mx-auto px-0 px-sm-4 pb-0 pb-sm-4 overflow-hidden">
+        <img src="../../../assets/images/me.png" alt="Photo about me">
+    </div>
+</div>

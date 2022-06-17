@@ -1,12 +1,13 @@
 @import "../../../../node_modules/bootstrap/scss/mixins";
 @import "../../../../node_modules/bootstrap/scss/functions";
 @import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../assets/scss/colors.scss";
 
 .bottom-nav {
 	width: fit-content;
-	background: rgba( 19, 30, 49, 0.45 );
-	backdrop-filter: blur( 8px );
-	-webkit-backdrop-filter: blur( 8px );
+	background: linear-gradient(to right, $secondary-color -10%, transparent, $secondary-color 110%);
+	backdrop-filter: blur(6.9px);
+	-webkit-backdrop-filter: blur(2.9px);
 	z-index: 1000;
 	bottom: 3rem;
 	left: 50%;
@@ -14,11 +15,19 @@
 	padding: 0.75rem 0;
 
   &--part {
-    padding: 0.75rem 1rem;
+    width: 3rem;
+    height: 3rem;
 		color: white;
 
+    .icon {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+	  font-size: 1rem;
+    }
+
 		&.selected {
-			background-color: rgb(22, 22, 22);
+			background-color: $secondary-color;
 		}
 
     &:hover {

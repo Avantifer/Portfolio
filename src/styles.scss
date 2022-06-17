@@ -1,4 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url("assets/images/bg-texture.png");
+  background-repeat: repeat;
+  background-color: #1f1f37 !important;
+  color: white !important;
+  font-family: "Anek Malayalam", sans-serif !important;
+}
