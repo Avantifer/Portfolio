@@ -1,0 +1,122 @@
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../assets/scss/colors.scss";
+
+.about-me {
+  margin-top: 5rem;
+
+  h6 {
+    font-weight: 400;
+    color: lightgray;
+  }
+
+  h3 {
+    color: $primary-color;
+  }
+
+  &--flex {
+    &--photo {
+      background: linear-gradient(
+        45deg,
+        transparent,
+        $primary-color,
+        transparent
+      );
+      border-radius: 2rem;
+      width: 24rem;
+      height: fit-content;
+
+      img {
+        border-radius: 2rem;
+        width: 24rem;
+        overflow: hidden;
+        transform: rotate(10deg);
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+          transform: rotate(0);
+        }
+      }
+    }
+
+    &--info {
+      width: 50%;
+
+      &--types {
+        gap: 1.25rem;
+
+        &--type {
+          background-color: $primary-color-dark;
+          border-radius: 2rem;
+          padding: 2rem 1.75rem;
+          width: 12rem;
+          height: 11rem;
+
+          em {
+            color: $primary-color;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      &--text {
+        width: 82%;
+        color: lightgray;
+      }
+
+      button {
+        background-color: $primary-color;
+        color: $secondary-color;
+        margin-bottom: 10rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .about-me {
+    &--flex {
+      &--info {
+        width: 100% !important;
+
+        &--text {
+          width: 62% !important;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(lg) {
+  .about-me {
+    &--flex {
+      &--info {
+        &--text {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .about-me {
+    &--flex {
+      &--info {
+        &--text {
+          width: 90% !important;
+        }
+      }
+
+      &--photo {
+        width: 18rem;
+
+        img {
+          width: 18rem;
+        }
+      }
+    }
+  }
+}

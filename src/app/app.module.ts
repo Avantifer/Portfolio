@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { HeaderComponent } from './components/header/header.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BottomNavComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
