@@ -1,0 +1,90 @@
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../assets/scss/colors.scss";
+
+h6 {
+  font-weight: 400;
+  color: lightgray;
+}
+
+h3 {
+  color: $primary-color;
+}
+
+.skills {
+  gap: 2rem;
+ 
+
+  span {
+    color: $primary-color;
+    font-size: 1.5rem;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+  }
+
+  em {
+    color: $primary-color;
+    margin-top: 0.15rem;
+  }
+
+  p {
+    color: lightgray;
+  }
+
+  &--front, &--back {
+    background-color: $primary-color-dark;
+    border: 1px solid $primary-color-dark;
+    padding: 2rem 2.5rem;
+    width: 35rem;
+    height: 28rem;
+    border-radius: 2rem;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      background-color: rgba($primary-color-dark, 0.3);
+    }
+
+    h6 {
+      font-weight: 500;
+      color: white;
+    }
+
+
+    &--row {
+      gap: 5rem;
+    }
+  }
+
+  &--back {
+    margin-bottom: 10rem;
+  }
+
+}
+
+
+@include media-breakpoint-down(sm) {
+  .skills {
+
+    &--front, &--back {
+      width: 90% !important;
+      height: auto !important;
+
+      &--row {
+        gap: 0 !important;
+
+        &--column {
+
+          &--skill {
+            width: 9rem !important;
+            margin: auto;
+          }
+        }
+      }
+    }
+
+    &--back {
+      margin-bottom: 5rem;
+    }
+  }
+}

@@ -8,13 +8,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BottomNavComponent,
     HeaderComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
