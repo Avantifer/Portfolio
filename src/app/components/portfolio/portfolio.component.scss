@@ -49,3 +49,22 @@
     }
   }
 }
+
+
+@include media-breakpoint-down(md) {
+  .portfolio {
+    &--cards {
+  
+      &--card {
+        min-width: 18rem !important;
+  
+        &--img--top {
+          border-radius: 1rem;
+          height: 14rem;
+          max-height: 14rem;
+          min-width: 12rem;
+        }
+      }
+    }
+  }
+}
