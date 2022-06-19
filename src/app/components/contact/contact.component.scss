@@ -1,0 +1,17 @@
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../assets/scss/colors.scss";
+
+.contact {
+  margin-bottom: 5rem;
+
+  h6 {
+    font-weight: 400;
+    color: lightgray;
+  }
+
+  h3 {
+    color: $primary-color;
+  }
+}
