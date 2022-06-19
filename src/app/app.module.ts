@@ -9,6 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     BottomNavComponent,
     HeaderComponent,
     AboutMeComponent,
-    SkillsComponent
+    SkillsComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
