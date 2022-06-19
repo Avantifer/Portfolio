@@ -1,0 +1,51 @@
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../assets/scss/colors.scss";
+
+.portfolio {
+  h6 {
+    font-weight: 400;
+    color: lightgray;
+  }
+
+  h3 {
+    color: $primary-color;
+  }
+
+  &--cards {
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+
+    &--card {
+      background-color: $primary-color-dark;
+      border-radius: 2rem;
+      flex: 1;
+      max-width: 22rem;
+      min-width: 20rem;
+
+      &--img--top {
+        border-radius: 1rem;
+        height: 14rem;
+      }
+
+      &--buttons {
+        gap: 1rem;
+
+        &--button {
+          letter-spacing: 0.5px;
+    
+          &:first-child {
+            border: 1px solid $primary-color !important;
+            color: $primary-color !important;
+          }
+    
+          &:last-child {
+            background-color: $primary-color;
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+}

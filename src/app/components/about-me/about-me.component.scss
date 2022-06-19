@@ -4,8 +4,8 @@
 @import "../../../assets/scss/colors.scss";
 
 .about-me {
-  margin-top: 5rem;
-
+  margin: 5rem 0;
+  
   h6 {
     font-weight: 400;
     color: lightgray;
@@ -16,6 +16,7 @@
   }
 
   &--flex {
+    
     &--photo {
       background: linear-gradient(
         45deg,
@@ -51,7 +52,7 @@
           border-radius: 2rem;
           padding: 2rem 1.75rem;
           border: 1px solid $primary-color-dark;
-          width: 12rem;
+          width: 11rem;
           height: 11rem;
           transition: all 0.4s ease-in-out;
 
@@ -75,7 +76,6 @@
       button {
         background-color: $primary-color;
         color: $secondary-color;
-        margin-bottom: 10rem;
       }
     }
   }
@@ -122,9 +122,6 @@
         img {
           width: 18rem;
         }
-      }
-      button {
-        margin-bottom: 5rem;
       }
     }
   }
