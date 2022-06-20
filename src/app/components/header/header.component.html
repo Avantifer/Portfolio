@@ -1,4 +1,4 @@
-<div class="upper-side mx-auto text-center position-relative">
+<div class="upper-side mx-auto text-center position-relative" id="header">
     <h5 class="user-select-none">Hola, soy</h5>
     <h1 class="user-select-none">Fernando Ruiz</h1>
     <h6 class="user-select-none">Full-Stack Developer</h6>
@@ -18,9 +18,9 @@
         <button mat-button class="border me-3 py-1 px-3" (click)="downloadPdf()">
             Descargar CV
         </button>
-        <button mat-button class="py-1 px-3">
+        <a mat-button class="py-1 px-3" href="#contact-me">
             Charlemos
-        </button>
+        </a>
     </div>
     <div class="upper-side--image mx-auto px-0 px-sm-4 pb-0 pb-sm-4 overflow-hidden user-select-none">
         <img src="../../../assets/images/me.png" alt="Photo about me">

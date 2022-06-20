@@ -28,19 +28,20 @@
 
   &--buttons {
 
+    button, a {
+      letter-spacing: 0.5px;
+    }
+
     button {
       letter-spacing: 0.5px;
-
-      &:first-child {
-        border-color: $primary-color !important;
-        color: $primary-color !important;
-      }
-
-      &:last-child {
-        background-color: $primary-color;
-        color: $secondary-color;
-      }
+      border-color: $primary-color !important;
+      color: $primary-color !important;
     }
+    
+    a {
+      background-color: $primary-color;
+      color: $secondary-color;
+    }    
   }
 
   &--social {
