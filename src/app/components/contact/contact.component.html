@@ -1,4 +1,32 @@
-<div class="contact text-center">
+<div class="contact text-center user-select-none">
     <h6 class="user-select-none">Estemos en contacto</h6>
     <h3 class="user-select-none">Háblame</h3>
+    <div class="contact--flex d-flex flex-column flex-md-row justify-content-center mt-4">
+        <div class="contact--flex--socials d-flex flex-row flex-md-column flex-wrap flex-md-wrap align-items-center align-items-md-start justify-content-center">
+            <div class="contact--flex--socials--social d-flex flex-column align-items-center">
+                <em class="fa-solid fa-envelope"></em>
+                <span class="contact--flex--socials--social--name fw-bold mt-3">Email</span>
+                <p>ferenandoruiz@gmail.com</p>
+                <a href="mailto:email" role="button">Enviar un mensaje</a>
+            </div>
+            <div class="contact--flex--socials--social d-flex flex-column align-items-center">
+                <em class="fa-solid fa-paper-plane"></em>
+                <span class="contact--flex--socials--social--name fw-bold mt-3">Email</span>
+                <p>@Ferchivon</p>
+                <a href="https://web.telegram.org/k/" target="_blank" role="button">Enviar un mensaje</a>
+            </div>
+            <div class="contact--flex--socials--social d-flex flex-column align-items-center">
+                <em class="fa-brands fa-whatsapp"></em>
+                <span class="contact--flex--socials--social--name fw-bold mt-3">Email</span>
+                <p>620 38 86 97</p>
+                <a href="https://api.whatsapp.com/send?phone=620388697" target="_blank" role="button">Enviar un mensaje</a>
+            </div>
+        </div>
+        <form [formGroup]="emailForm" class="contact--flex--form d-flex flex-column align-items-center">
+            <input type="text" class="p-3 mb-4 w-100" formControlName="name" placeholder="Tu nombre completo">
+            <input type="email" class="p-3 mb-4 w-100" formControlName="email" placeholder="Tu Email">
+            <textarea id="message" class="p-3 mb-4 w-100" formControlName="message" rows="3" placeholder="Tu mensaje" ></textarea>
+            <button mat-button type="submit" (click)="sendEmail()">Enviar Mensaje</button>
+        </form>
+    </div>
 </div>

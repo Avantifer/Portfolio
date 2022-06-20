@@ -11,6 +11,8 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -20,14 +22,17 @@ import { ContactComponent } from './components/contact/contact.component';
     AboutMeComponent,
     SkillsComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatButtonModule
-  ],
+    MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSnackBarModule
+  ],  
   providers: [],
   bootstrap: [AppComponent]
 })
