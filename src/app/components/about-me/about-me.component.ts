@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// @ts-ignore
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-about-me',
@@ -10,6 +12,7 @@ export class AboutMeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
 }

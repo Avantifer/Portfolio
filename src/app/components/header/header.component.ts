@@ -3,6 +3,10 @@ import { Component, OnInit } from '@angular/core';
 declare var require: any;
 const FileSaver = require('file-saver');
 
+// @ts-ignore
+import * as AOS from 'aos';
+
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -13,6 +17,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
   downloadPdf(): void {
